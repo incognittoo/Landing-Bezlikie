@@ -79,6 +79,11 @@ h6 {
   font-weight: inherit;
 }
 
+h1 {
+  height: 42px;
+  font-weight: 700;
+}
+
 .ibg {
   background-position: center;
   background-size: cover;
@@ -104,6 +109,11 @@ h6 {
 .content {
   flex: 1 1 auto;
 }
+
+.title {
+  padding: 10px 0px 0px 0px;
+}
+
 .hi {
 }
 
@@ -125,18 +135,15 @@ h6 {
 .hi__logo {
 }
 
+.hi__logo-mobile {
+  display: none;
+}
+
 .hi__text {
   padding: 70px 0px 70px 0px;
   font-size: 42px;
   color: #fff;
   font-weight: 700;
-}
-
-@media (max-width: 1220px) {
-  .hi__text {
-    padding: 70px 0px 70px 0px;
-    font-size: 36px;
-  }
 }
 
 .hi__download {
@@ -148,7 +155,18 @@ h6 {
 .googleplay {
 }
 
+.hi__image {
+  flex: 0 1 100%;
+}
+
+.hi__image_little {
+}
+
 @media (max-width: 1220px) {
+  .hi__text {
+    padding: 70px 0px 70px 0px;
+    font-size: 36px;
+  }
   .googleplay {
     display: flex;
     padding: 5px 5px 0px 0px;
@@ -159,54 +177,83 @@ h6 {
   }
 }
 
-.hi__image {
-  flex: 0 1 100%;
-}
-
-.hi__image_little {
-}
-
-@media (max-width: 1220px) {
-  .hi__image {
-    display: none;
-  }
-  .hi__image_little {
+@media (max-width: 992px) {
+  .hi__body {
+    background-image: url(/img/1000x800.jpg);
+    background-repeat: no-repeat;
     flex: 0 1 100%;
   }
-}
 
-////////////////HEADER-MOBILE//////////////////////
-
-@media (max-width: 760px) {
-  .hi {
-    display: none;
-  }
-  .hi-mobile {
-    display: block;
-  }
-  .hi-mobile__row {
-    display: flex;
-  }
-  .hi-mobile__body {
-  }
-  .hi-mobile__logo {
-  }
   .hi__text {
-    color: black;
+    width: 50%;
+    color: #000;
   }
   .hi__download {
-  }
-  .appstore {
-  }
-  .googleplay {
+    display: flex;
+    padding: 0px 10px 80px 0px;
   }
   .hi__image {
-    // flex: 0 1 100%;
-    width: 100%;
+    display: none;
+  }
+  .googleplay {
+    display: flex;
+    padding: 5px 5px 0px 0px;
+  }
+  .appstore {
+    display: flex;
+    padding: 5px 5px 0px 0px;
   }
 }
 
-////////////////FOTER//////////////////////
+@media (max-width: 767px) {
+  .hi {
+    width: 100%;
+  }
+  .hi__body {
+    background-image: url(/img/700x800.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .hi__text {
+    font-size: 32px;
+    color: #000;
+  }
+
+  .hi__logo {
+    display: none;
+  }
+
+  .hi__logo-mobile {
+    display: block;
+  }
+}
+
+///////////////////////////////////
+
+.about {
+  background: linear-gradient(
+    274.47deg,
+    rgba(27, 196, 125, 0.35) 4.29%,
+    rgba(242, 242, 243, 0) 99.1%
+  );
+  width: 100%;
+  height: 750px;
+}
+.about__row {
+  display: flex;
+}
+.about__body {
+  padding: 40px 10px 0px 20px;
+  flex: 0 1 75%;
+}
+.about__video {
+  align-items: center;
+  justify-content: center;
+}
+.start-video {
+}
+
+///////////////////////////////////
 
 .footer {
   background-color: #cd0202;
