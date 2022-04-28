@@ -67,6 +67,7 @@ ul li {
 }
 img {
   vertical-align: top;
+  max-width: 100%;
 }
 
 h1,
@@ -114,7 +115,22 @@ h1 {
   font-size: 32px;
   font-weight: 600;
   padding: 65px 0px 0px 20px;
+  text-transform: uppercase;
 }
+
+@media (max-width: 767px) {
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    padding: 65px 0px 0px 5px;
+    text-transform: uppercase;
+  }
+}
+
+// @media (max-width: 992px) {
+// }
+// @media (max-width: 767px) {
+// }
 
 //////////////////HI/////////////////////
 
@@ -128,9 +144,9 @@ h1 {
   display: flex;
 }
 .hi__body {
-  background-color: #1bc47d;
   padding: 80px 10px 0px 20px;
   flex: 0 1 75%;
+  background-color: #1bc47d;
 }
 .hi__logo {
 }
@@ -141,16 +157,19 @@ h1 {
 
 .hi__text {
   padding: 70px 0px 70px 0px;
-  font-size: 42px;
+  font-size: 32px;
   color: #fff;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 .hi__download {
   padding: 0px 10px 80px 0px;
+  display: flex;
+  justify-content: flex-start;
 }
 .appstore {
-  padding: 0px 5px 0px 0px;
+  padding: 0px 10px 0px 0px;
 }
 .googleplay {
 }
@@ -166,14 +185,6 @@ h1 {
   .hi__text {
     padding: 70px 0px 70px 0px;
     font-size: 36px;
-  }
-  .googleplay {
-    display: flex;
-    padding: 5px 5px 0px 0px;
-  }
-  .appstore {
-    display: flex;
-    padding: 5px 0px 0px 0px;
   }
 }
 
@@ -249,8 +260,8 @@ h1 {
   line-height: 30px;
 }
 .about__video {
-  flex: 1 0 35%;
-  padding: 120px 0px 210px 20px;
+  padding: 110px 0px 210px 20px;
+  margin: 0px -20px 0px 0px;
 }
 .preview {
   display: flex;
@@ -281,12 +292,12 @@ h1 {
   }
   .about__text {
     text-align: justify;
-    padding: 0px 20px 50px 20px;
+    padding: 0px 5px 50px 5px;
     font-size: 17px;
     order: 2;
   }
   .about__video {
-    padding: 50px 0px 50px 0px;
+    padding: 50px 22px 50px 0px;
     order: 1;
   }
   .preview {
@@ -306,16 +317,54 @@ h1 {
   );
 }
 .team__body {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 80px 0px 80px 20px;
+  justify-content: center;
 }
 .team__item {
+  background-color: #1bc47d;
+  flex: 0 1 23%;
+  flex-direction: column;
+  margin: 0px 20px 20px 0px;
 }
+
 .team__image {
+  width: 100%;
 }
 .team__text {
+  padding: 15px 0px 15px 15px;
+  line-height: 20px;
 }
 .name {
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
 }
 .position {
+  font-weight: 400;
+  font-size: 13px;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .team__item {
+    flex: 0 1 32%;
+  }
+  .team__text {
+    padding: 15px 15px 15px 15px;
+  }
+}
+@media (max-width: 767px) {
+  .team__item {
+    flex: 1 1 40%;
+  }
+  .name {
+    font-size: 13px;
+  }
+  .position {
+    font-size: 11px;
+  }
 }
 
 ////////////////FOOTER////////////////////
