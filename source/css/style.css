@@ -394,11 +394,11 @@ h1 {
   color: #fff;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1027px) {
   .team__item {
     -webkit-box-flex: 0;
-        -ms-flex: 0 1 32%;
-            flex: 0 1 32%;
+        -ms-flex: 0 1 33.333%;
+            flex: 0 1 33.333%;
   }
 
   .team__text {
@@ -408,8 +408,8 @@ h1 {
 @media (max-width: 767px) {
   .team__item {
     -webkit-box-flex: 1;
-        -ms-flex: 1 1 40%;
-            flex: 1 1 40%;
+        -ms-flex: 1 1 33.333%;
+            flex: 1 1 33.333%;
   }
 
   .name {
@@ -420,6 +420,81 @@ h1 {
     font-size: 11px;
   }
 }
+.faq {
+  background-color: #f2f2f3;
+}
+
+.faq__body {
+  padding: 80px 20px 80px 20px;
+}
+
+.faq__item {
+  margin: 0px 0px 25px 0px;
+  background: #ffffff;
+  border-radius: 10px;
+  -webkit-filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.25));
+}
+
+.faq__title {
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 25px 25px 25px 25px;
+  cursor: pointer;
+}
+
+.faq__title::before,
+.faq__title::after {
+  content: "";
+  width: 15px;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  margin: 0px 25px 0px 0px;
+  top: 35px;
+  right: 0;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.faq__title.active {
+  color: #cd0202;
+}
+
+.faq__title.active::before,
+.faq__title.active::after {
+  background-color: #cd0202;
+}
+
+.faq__title::before {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  right: 0;
+}
+
+.faq__title::after {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  right: 10px;
+}
+
+.faq__title.active::before {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.faq__title.active::after {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.faq__text {
+  font-size: 24px;
+  padding: 0px 25px 25px 25px;
+  display: none;
+}
+
 .footer {
   background-color: #cd0202;
   color: #fff;

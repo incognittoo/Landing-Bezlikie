@@ -9,3 +9,16 @@ function ibg() {
 }
 
 ibg();
+
+$(document).ready(function () {
+  $(".faq__title").click(function (event) {
+    if ($(".faq").hasClass("one")) {
+      $(".faq__title").not($(this)).removeClass("active");
+      $(".faq__text").not($(this).next()).slideUp(300);
+    }
+    $(this).toggleClass("active").next().slideToggle(300);
+  });
+  // $(".team__item").click(function (event) {
+
+  // });
+});
