@@ -18,7 +18,4 @@ $(document).ready(function () {
     }
     $(this).toggleClass("active").next().slideToggle(300);
   });
-  // $(".team__item").click(function (event) {
-
-  // });
 });

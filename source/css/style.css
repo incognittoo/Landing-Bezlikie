@@ -361,6 +361,13 @@ h1 {
           justify-content: center;
 }
 
+.cutuway {
+  position: absolute;
+  background-color: #cd0202;
+  width: 100px;
+  height: 100px;
+}
+
 .team__item {
   background-color: #1bc47d;
   -webkit-box-flex: 0;
@@ -432,8 +439,6 @@ h1 {
   margin: 0px 0px 25px 0px;
   background: #ffffff;
   border-radius: 10px;
-  -webkit-filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.25));
-          filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.25));
 }
 
 .faq__title {
@@ -442,6 +447,7 @@ h1 {
   letter-spacing: 1px;
   padding: 25px 25px 25px 25px;
   cursor: pointer;
+  position: relative;
 }
 
 .faq__title::before,
@@ -495,6 +501,18 @@ h1 {
   display: none;
 }
 
+@media (max-width: 767px) {
+  .faq__title {
+    font-size: 16px;
+  }
+
+  .faq__title::before,
+.faq__title::after {
+    top: 31px;
+    width: 15px;
+    height: 2.5px;
+  }
+}
 .footer {
   background-color: #cd0202;
   color: #fff;
