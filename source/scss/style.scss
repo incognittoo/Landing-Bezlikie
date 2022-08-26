@@ -85,6 +85,15 @@ h1 {
   font-weight: 700;
 }
 
+.scroll-lock {
+  overflow: hidden;
+}
+
+.scroll-lock-ios {
+  position: fixed;
+  overflow: hidden;
+}
+
 .ibg {
   background-position: center;
   background-size: cover;
@@ -344,6 +353,15 @@ h1 {
   padding: 15px 0px 15px 15px;
   line-height: 20px;
 }
+.team__send {
+  display: block;
+  position: absolute;
+  background-color: #1bc47d;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
 .name {
   font-weight: 600;
   font-size: 15px;
@@ -515,4 +533,46 @@ h1 {
     padding: 60px 0px 0px 0px;
     order: 2;
   }
+}
+
+/// WELCOME APP
+
+.wc__wrapper {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.wc__body {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wc__logo {
+  margin-bottom: 40px;
+}
+.wc__download {
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
+.wc__appstore {
+  margin: 5px;
+}
+.wc__googleplay {
+  margin: 5px;
+}
+.wc__video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.wc__video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
